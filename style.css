@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+}
+.mobile-body{
+    width: 317px;
+    height: 639px;
+    background: #000 url('./2786962.jpg');
+    background-size: 16rem;
+    background-repeat: no-repeat;
+    background-position: -2px -122px;
+    border-radius: 36px;
+    position: relative;
+    overflow: hidden;
+}
+
+.mobile-body::before{
+    content: '';
+    width: 317px;
+    height: 639px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 36px;
+    box-shadow: inset 0px 0px 20px #111;
+    z-index: 1;
+}
+
+.mobile-body .top-nav{
+    width: 100%;
+}
+.mobile-body .top-nav img{
+    width: 100%;
+}
+
+.mobile-body .row-time-date{
+    position: absolute;
+    bottom: 12rem;
+    left: 34px;
+}
+
+.mobile-body .row-time-date .f-col{
+    font-weight: bold;
+    position: relative;
+}
+
+.mobile-body .row-time-date .f-col .time-hr{
+    position: absolute;
+    font-size: 78px;
+    top: -54px;
+    text-transform: uppercase;
+    background: linear-gradient(0deg, black, #0068ff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.mobile-body .row-time-date .f-col .time-mn{
+    position: absolute;
+    font-size: 78px;
+    top: -10px;
+    left: 14px;
+    text-transform: uppercase;
+    background: linear-gradient(0deg, black, #fff);
+    filter: drop-shadow(-9px -1px 6px black);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.mobile-body .row-time-date .s-col{
+    color: #aeaeae;
+    position: relative;
+    left: 99px;
+    top: 31px;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+.mobile-body .center-text-lock{
+    width: 100%;
+    text-align: center;
+    color: #aeaeae;
+    position: absolute;
+    bottom: 23px;
+}
+
+.mobile-body .row-bottom-app{
+    width: 100%;
+    position: absolute;
+    bottom: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 18px 0px 18px;
+}
+
+.mobile-body .row-bottom-app .app{
+    width: 41px;
+    height: 37px;
+    background-color: #ffffff14;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 11px;
+}
